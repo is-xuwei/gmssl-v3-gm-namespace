@@ -1,4 +1,6 @@
-# GmSSL 3.0 Dev
+
+
+# Forked from guanzhi/gmssl-v3-dev [GmSSL 3.0 Dev]
 
 GmSSL的2.x版本的开发始于2016年，目前主分支在功能上实现了对主要国密算法、标准和协议的覆盖，并成功应用于多种互联网场景中。但是随着GmSSL在物联网、区块链等新场景中的应用，及在密码产品合规检测过程中的实践，我们发现应用对GmSSL提出了一些新的需求。由于很难在基于OpenSSL的GmSSL 2.x版本上满足新需求，因此我们重新设计了GmSSL的架构，GmSSL也迎来第三个大版本——GmSSL 3.0。
 
@@ -34,9 +36,8 @@ GmSSL的2.x版本的开发始于2016年，目前主分支在功能上实现了�
 * TLS 1.2，支持密码套件：`ECDHE_SM4_CBC_SM3 {0xE0,0x11}` (GB/T 38636-2020、GM/T 0024-2014、RFC 5246)
 * TLS 1.3，支持密码套件：`TLS_SM4_GCM_SM3 {0x00,0xC6}` +ECDHE/SM2 (RFC 8998), `TLS_AES_128_GCM_SHA256` + ECDHE/ECDSA/NIST-P256
 
-### c++版本 by indawn
+# c++版本 by indawn
 
 * .c文件重命名为.cpp文件
 * 定义namespace gm
-
-- 简单封装生成c库libgm.so，暴露sm3、sm4接口
+* 简单封装生成c库libgm.so，暴露sm3、sm4接口
